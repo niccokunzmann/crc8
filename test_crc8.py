@@ -30,7 +30,7 @@ This is the definition of the hash function interface from
         exchange the value safely in email or other non-binary environments.
 
     hash.copy()
-        Return a copy (“clone”) of the hash object. This can be used to
+        Return a copy ("clone") of the hash object. This can be used to
         efficiently compute the digests of strings that share a common
         initial substring.
 

@@ -13,8 +13,8 @@ install:
 - TAG_NAME=v$PACKAGE_VERSION
 # install from the zip file to see if files were forgotten
 - python setup.py sdist --dist-dir=dist --formats=zip
-- python -m pip install wheel
-- ( cd dist ; python -m pip install crc8-${PACKAGE_VERSION}.zip )
+- pip install wheel
+- ( cd dist ; pip install crc8-${PACKAGE_VERSION}.zip )
 before_script:
 # remove the build folder because it creates problems for py.test
 - rm -rf build
