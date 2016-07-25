@@ -140,6 +140,10 @@ def test_copy():
     assert crc2.copy() != crc
 
 
+def test_initialize_with_bytes():
+    assert crc8(b'123').digest() == CRC8_123
+
+
 if __name__ == "__main__":
     import traceback
     failed = 0
