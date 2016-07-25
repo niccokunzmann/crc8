@@ -12,7 +12,7 @@ and gave credit "From the PyPy project" and the link
 import sys
 
 __author__="Nicco Kunzmann"
-__version__="0.0.1"
+__version__="0.0.2"
 
 PY2 = sys.version_info[0] == 2
 
@@ -117,7 +117,7 @@ class crc8(object):
             return bytes([self._sum])
     
     def copy(self):
-        """Return a copy (“clone”) of the hash object.
+        """Return a copy ("clone") of the hash object.
         
         This can be used to efficiently compute the digests of strings that
         share a common initial substring.
