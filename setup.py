@@ -7,7 +7,6 @@ from distutils.core import Command
 import subprocess
 
 PACKAGE_NAME = "crc8"
-PACKAGE_NAMES = ["crc8"]
 
 HERE = os.path.abspath(os.path.dirname(__file__))
 sys.path.insert(0, HERE)  # for package import
@@ -25,7 +24,7 @@ def read_file_named(file_name):
 METADATA = dict(
     name=PACKAGE_NAME,
     version=__version__,
-    packages=PACKAGE_NAMES,
+    py_modules=[PACKAGE_NAME],
     author=__author__,
     author_email='niccokunzmann@rambler.ru',
     description='A module that implements the CRC8 hash algorithm for Python 2 and 3.',
@@ -101,7 +100,7 @@ class TagAndDeployCommand(Command):
 SETUPTOOLS_METADATA = dict(
     install_requires=[],
     tests_require=[],
-    include_package_data=True,
+    include_package_data=False,
     classifiers=[  # https://pypi.python.org/pypi?%3Aaction=list_classifiers
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
@@ -138,7 +137,4 @@ def main():
         distutils.core.setup(**METADATA)
 
 if __name__ == '__main__':
-    if len(sys.argv) == 2 and sys.argv[1] == PrintRequiredPackagesCommand.name:
-        PrintRequiredPackagesCommand.run()
-    else:
-        main()
+    main()
