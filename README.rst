@@ -1,6 +1,10 @@
 crc8
 ====
 
+.. image:: https://travis-ci.org/niccokunzmann/crc8.svg
+   :target: https://travis-ci.org/niccokunzmann/crc8
+   :alt: Build Status
+
 A module that implements the CRC8 hash algorithm for Python 2 and 3.
 
 Installation
