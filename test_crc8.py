@@ -127,6 +127,19 @@ def test_bytes_expected():
         assert False, "None can not be passed to crc8 before encoding."
 
 
+def test_copy():
+    crc = crc8()
+    crc.update(b'asd')
+    crc2 = crc.copy()
+    assert crc2 != crc
+    assert crc2.digest() == crc.digest()
+    crc2.update(b"asd")
+    assert crc2.digest() != crc.digest()
+    crc.update(b"asd")
+    assert crc2.digest() == crc.digest()
+    assert crc2.copy() != crc
+
+
 if __name__ == "__main__":
     import traceback
     failed = 0

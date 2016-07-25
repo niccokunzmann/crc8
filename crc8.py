@@ -114,7 +114,17 @@ class crc8(object):
             
         def _digest(self):
             return bytes([self._sum])
-            
+    
+    def copy(self):
+        """Return a copy (“clone”) of the hash object.
+        
+        This can be used to efficiently compute the digests of strings that
+        share a common initial substring.
+        """
+        crc = crc8()
+        crc._sum = self._sum
+        return crc
+
 __all__ = ['crc8']
 
 ##
