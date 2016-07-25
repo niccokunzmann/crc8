@@ -5,6 +5,15 @@ crc8
    :target: https://travis-ci.org/niccokunzmann/crc8
    :alt: Build Status
 
+.. image:: https://badge.fury.io/py/crc8.svg
+   :target: https://pypi.python.org/pypi/crc8
+   :alt: Python Package Version on Pypi
+   
+.. image:: https://img.shields.io/pypi/dm/crc8.svg
+   :target: https://pypi.python.org/pypi/crc8#downloads
+   :alt: Downloads from Pypi   
+
+   
 A module that implements the CRC8 hash algorithm for Python 2 and 3.
 
 Installation
