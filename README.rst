@@ -50,5 +50,6 @@ If something s not there that you would like to have,
 `open an issue <https://github.com/niccokunzmann/crc8/issues>`__, 
 `create a pull request <https://github.com/niccokunzmann/crc8/pulls>`__.
 
-The license is `MIT <LICENSE>`__ and I value contributions
-if you modify the code.
+The license is `MIT
+<https://github.com/niccokunzmann/crc8/blob/master/LICENSE>`__ and
+I value contributions if you modify the code.
