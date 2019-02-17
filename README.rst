@@ -42,6 +42,7 @@ Example:
     hash = crc8.crc8()
     hash.update(b'123')
     assert hash.hexdigest() == 'c0'
+    assert hash.digest() == b'\xc0'
 
 Contribute
 ----------
