@@ -80,6 +80,7 @@ class crc8(object):
     def __init__(self, initial_string=b'', initial_start=0x00):
         """Create a new crc8 hash instance."""
         self._sum = initial_start
+        self._initial_start = initial_start
         self._update(initial_string)
 
     def update(self, bytes_):
@@ -147,5 +148,8 @@ class crc8(object):
         crc = crc8()
         crc._sum = self._sum
         return crc
+
+    def reset(self):
+        self._sum = self._initial_start
 
 __all__ = ['crc8']

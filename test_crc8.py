@@ -140,6 +140,14 @@ def test_copy():
     assert crc2.copy() != crc
 
 
+def test_reset():
+    crc = crc8()
+    crc.update(b'asd')
+    crc.reset()
+    crc.update(b'abc')
+    assert crc.digest() == CRC8_ABC
+
+
 def test_initialize_with_bytes():
     assert crc8(b'123').digest() == CRC8_123
 
