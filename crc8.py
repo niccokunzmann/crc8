@@ -150,6 +150,7 @@ class crc8(object):
         return crc
 
     def reset(self):
+        """Resets the hash object to its initial state."""
         self._sum = self._initial_start
 
 __all__ = ['crc8']
