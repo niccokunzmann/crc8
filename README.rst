@@ -58,6 +58,14 @@ The license is `MIT
 I value contributions if you modify the code.
 
 
+Changelog
+---------
+
+- v0.2.0 - add ``reset()`` by `henriksod <https://github.com/henriksod>`_
+- v0.1.0 - add option to select initial polynom by `FevGeb <https://github.com/FevGeb>`_
+- v0.0.5 - document license
+- v0.0.4 - choose MIT license
+
 Release
 -------
 
