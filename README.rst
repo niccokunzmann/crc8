@@ -56,3 +56,17 @@ If something s not there that you would like to have,
 The license is `MIT
 <https://github.com/niccokunzmann/crc8/blob/master/LICENSE>`__ and
 I value contributions if you modify the code.
+
+
+Release
+-------
+
+Install `twine <https://twine.readthedocs.io/en/stable/>`_.
+
+.. code:: sh
+
+    python setup.py sdist
+    source .env # if you have stored TWINE_USERNAME and TWINE_PASSWORD
+    twine upload dist/*
+    
+    
