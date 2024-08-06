@@ -46,6 +46,15 @@ Example:
     hash.reset()
     assert hash.hexdigest() == '00'
 
+You can also use the method chaining syntax:
+
+.. code:: python
+
+    import crc8
+    hash = crc8.crc8()
+    result = hash.reset().update(b'123').hexdigest()
+    assert result == 'c0'
+
 Contribute
 ----------
 
