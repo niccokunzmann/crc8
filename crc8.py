@@ -92,6 +92,8 @@ class crc8(object):
         """
         self._update(bytes_)
 
+        return self
+
     def digest(self):
         """Return the digest of the bytes passed to the update() method so far.
 
@@ -152,5 +154,7 @@ class crc8(object):
     def reset(self):
         """Resets the hash object to its initial state."""
         self._sum = self._initial_start
+
+        return self
 
 __all__ = ['crc8']
