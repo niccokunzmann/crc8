@@ -147,6 +147,9 @@ def test_reset():
     crc.update(b'abc')
     assert crc.digest() == CRC8_ABC
 
+def test_chaining():
+    crc = crc8()    
+    assert crc.reset().update(b'abc').digest() == CRC8_ABC
 
 def test_initialize_with_bytes():
     assert crc8(b'123').digest() == CRC8_123
