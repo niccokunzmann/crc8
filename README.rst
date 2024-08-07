@@ -1,10 +1,6 @@
 crc8
 ====
 
-.. image:: https://travis-ci.org/niccokunzmann/crc8.svg
-   :target: https://travis-ci.org/niccokunzmann/crc8
-   :alt: Build Status
-
 .. image:: https://badge.fury.io/py/crc8.svg
    :target: https://pypi.python.org/pypi/crc8
    :alt: Python Package Version on Pypi
