@@ -34,7 +34,7 @@ and gave credit "From the PyPy project" and the link
 import sys
 
 __author__="Nicco Kunzmann"
-__version__="0.2.0"
+__version__="0.2.1"
 
 PY2 = sys.version_info[0] == 2
 
